@@ -243,9 +243,6 @@ background-color: #404BBF;
 
 .address-list-item-name {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-list-item-name {
   color: #434455;
   font-family: Roboto, sans-serif;
   font-size: 16px;
@@ -258,6 +255,12 @@ background-color: #404BBF;
 .address-list-item-name:hover,
 .address-list-item-name:focus {
   color: #404BBF;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+  .address-list-item-name {
+    font-size: 12px;
+   }
 }
 
 
@@ -273,8 +276,8 @@ background-color: #404BBF;
   background-position: center;
   background-size: cover;
   background-image:  linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                     url(../images/hero/people-office.jpg);
-  padding: 188px 0;
+                     url(../images/hero/hero-image-mob@1x.jpg);
+  padding: 72px 0;
   display: block;
   max-width: 1440px;
   margin: 0 auto;
@@ -314,6 +317,7 @@ background-color: #404BBF;
 @media only screen and (min-width: 1158px) {
   .hero-section {
       max-width: 1440px;
+      padding: 188px 0;
       background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
@@ -390,14 +394,12 @@ background-color: #404BBF;
 
 .benefits-section {
   background: #FFFFFF;
-  padding: 120px 0;
-
+  padding: 96px 0;
 }
 
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 72px; 
 }
 
@@ -443,7 +445,14 @@ background-color: #404BBF;
   padding-top: 0px;
   margin-bottom: 8px;
   display: flex;
+  justify-content: center;
   width: 264px;
+}
+
+@media only screen and (min-width: 768px) {
+  .benefits-list-item-name {
+      flex-basis: calc((100% - 24px) / 2);
+  }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -452,7 +461,6 @@ background-color: #404BBF;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-      
   }
 }
 
@@ -460,10 +468,9 @@ background-color: #404BBF;
   color: #434455;
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  display: flex;
   width: 264px;
   flex-direction: column;
   align-items: flex-start;
@@ -474,7 +481,7 @@ background-color: #404BBF;
 
 .team-section {
   background-color: #F4F4FD;
-  padding: 120px 0;
+  padding: 96px 0;
   flex-shrink: 0;
 }
 
@@ -717,11 +724,21 @@ background-color: #404BBF;
   padding: 96px 0;
   background: var(--NAVY-BLUE, #2e2f42);
 }
+
+
 @media only screen and (max-width: 767.98px) {
   .footer-section {
     text-align: center;
   }
 }
+@media only screen and (max-width: 767.98px) {
+  .footer-section {
+    text-align: center;
+    padding: 100px 0;
+  }
+}
+
+
 @media only screen and (min-width: 768px) and (max-width: 1199.98px) {
   .footer-container {
     padding: 0 108px;
@@ -788,6 +805,12 @@ background-color: #404BBF;
 
 .icons-social-div {
   margin-bottom: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+  .icons-social-div {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 1158px) {
