@@ -71,7 +71,7 @@ html {
 }
 
 .scrollable-content::-webkit-scrollbar-thumb {
-  background-color: #6C717B;
+  background-color: #6c717b;
   border-radius: 10px;
 }
 
@@ -166,6 +166,7 @@ html {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   display: block;
+  user-select: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -208,6 +209,7 @@ html {
   text-align: left;
   padding: 24px 0;
   display: block;
+  user-select: none;
 }
 
 .navigation-link-item-name:hover,
@@ -397,6 +399,7 @@ html {
   letter-spacing: 0.02em;
   margin: 0 auto;
   text-transform: capitalize;
+  user-select: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -427,6 +430,7 @@ html {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
 }
 
 @media only screen and (min-width: 768px) {
