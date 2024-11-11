@@ -253,6 +253,7 @@ html {
   text-decoration: none;
   transition: background-color 0.3s;
   z-index: 1000;
+  user-select: none;
 }
 
 .scroll-to-top-button:hover {
@@ -1100,13 +1101,41 @@ html {
 
 .call-back-form-input,
 .comment-field {
+  display: flex;
+  align-items: center;
   width: 100%;
   border-radius: 4px;
   border: 1px solid var(--modal-background);
   background-color: transparent;
-  padding-left: 38px;
+  padding-right: 10px;
   font-size: 12px;
   transition: border-color 250ms var(--transition-ease);
+}
+
+.call-back-form-input {
+  padding-left: 38px;
+  min-height: 40px;
+}
+
+.comment-field {
+  padding-left: 10px;
+  min-height: 80px;
+}
+
+.call-back-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.icon-svg-checkbox {
+  pointer-events: none;
+}
+
+.call-back-checkbox-label {
+  display: flex;
 }
 
 .call-back-form-input:focus,
@@ -1116,12 +1145,16 @@ html {
 
 /* Checkbox */
 .call-back-form-checkbox-wrapper {
-  margin-bottom: 24px;
+  margin-top: 16px;
 }
 
 .call-back-checkbox-custom {
-  display: inline-flex;
-  width: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  min-width: 16px;
+  max-width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
